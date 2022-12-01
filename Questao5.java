@@ -22,8 +22,9 @@ public class Questao5 {
         
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {
-                determinante = (matriz[0][0]*((matriz[1][1]*matriz[2][2])+(-matriz[1][2]*matriz[2][1]))) + (-matriz[1][0]*((matriz[0][1]*matriz[2][2])+(-matriz[0][2]*matriz[2][1]))) + (matriz[2][0]*((matriz[0][1]*matriz[1][2])+(-matriz[0][2]*matriz[1][1])));
-                
+                determinante = (matriz[0][0]*((matriz[1][1]*matriz[2][2])+(-matriz[1][2]*matriz[2][1]))) + 
+                    (-matriz[1][0]*((matriz[0][1]*matriz[2][2])+(-matriz[0][2]*matriz[2][1]))) + 
+                    (matriz[2][0]*((matriz[0][1]*matriz[1][2])+(-matriz[0][2]*matriz[1][1])));
             }
         }
         System.out.print("Determinante da matriz: "+determinante);
